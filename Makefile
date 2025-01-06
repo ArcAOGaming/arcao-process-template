@@ -30,7 +30,6 @@ setup:
 # Installing Lua dependencies to both global and lib directories, Not sure if this is necessary, but included for completeness
 install:
 	luarocks install --tree=lib --only-deps arcao-process-template-1.0-1.rockspec
-	luarocks install --only-deps arcao-process-template-1.0-1.rockspec
 	npm install
 	npm i -g https://get_ao.g8way.io
 
