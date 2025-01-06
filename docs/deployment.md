@@ -1,5 +1,7 @@
 # Deployment Guide
 
+This guide will get your process up and running on AO, providing step-by-step instructions for deploying your application.
+
 ## Prerequisites
 
 Before deploying, ensure you have Node.js installed. You can use the following command to set up your environment automatically:
