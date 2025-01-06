@@ -27,7 +27,9 @@ setup:
 	fi
 
 # Define the target for installing dependencies
-# Installing Lua dependencies to both global and lib directories, Not sure if this is necessary, but included for completeness
+# Installing Lua dependencies to lib.
+# Installing Node dependencies to node_modules.
+# Intalling AO
 install:
 	luarocks install --tree=lib --only-deps arcao-process-template-1.0-1.rockspec
 	npm install

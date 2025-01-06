@@ -38,3 +38,17 @@ jobs:
       with:
         name: process-id
         path: process_id.log
+
+    - name: Read Process ID
+      id: read_process_id
+      run: echo "PROCESS_ID=$(cat process_id.log)" >> $GITHUB_ENV
+
+    - name: Create GitHub Release
+      uses: actions/create-release@v1
+      with:
+        tag_name: "release-${{ github.run_id }}"
+        release_name: "AOS Deployment"
+        body: "Process ID: ${{ env.PROCESS_ID }}"
+        draft: false
+        prerelease: false
+        token: ${{ secrets.GITHUB_TOKEN }}
