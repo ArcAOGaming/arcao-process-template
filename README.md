@@ -1,8 +1,8 @@
 # arcao-process-template
 
-![GitHub](https://img.shields.io/github/license/user/arcao-process-template)
-![Build Status](https://img.shields.io/github/actions/workflow/status/user/arcao-process-template/build.yml)
-![GitHub last commit](https://img.shields.io/github/last-commit/user/arcao-process-template)
+![GitHub](https://img.shields.io/github/license/ArcAOGaming/arcao-process-template)
+![Build Status](https://img.shields.io/github/actions/workflow/status/ArcAOGaming/arcao-process-template/build.yml)
+![GitHub last commit](https://img.shields.io/github/last-commit/ArcAOGaming/arcao-process-template)
 
 ## Overview
 
