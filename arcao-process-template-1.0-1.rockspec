@@ -9,7 +9,7 @@ description = {
    license = "MIT"
 }
 dependencies = {
-   "lua >= 5.3",
+   "lua >= 5.1",
    "busted >= 2.1.1",  -- Adding Busted dependency
    "ldoc"
 }
