@@ -1,0 +1,37 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '22'
+
+    - name: Install dependencies
+      run: make setup
+
+    - name: Build project
+      run: make build
+
+    - name: Deploy with AOS
+      run: |
+        bash deploy.sh
+        # Placeholder for capturing the process ID
+        # You might need to parse the output to capture the process ID
+
+    - name: Upload Process ID Log
+      uses: actions/upload-artifact@v3
+      with:
+        name: process-id
+        path: process_id.log

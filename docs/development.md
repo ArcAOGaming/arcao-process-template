@@ -2,47 +2,16 @@
 
 ## Prerequisites
 
-### Installing LuaRocks
+Ensure you have Node.js and LuaRocks installed on your system. You can use the following command to set up your environment automatically:
 
-#### macOS
-First, install Homebrew if you haven't already:
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+make setup
 ```
 
-Then install LuaRocks:
-```bash
-# Using Homebrew
-brew install luarocks
-```
+Or follow the instructions in the respective guides:
 
-#### Linux
-```bash
-sudo apt-get update
-sudo apt-get install luarocks
-```
-
-#### Windows
-1. Download the latest Windows installer from the [LuaRocks releases page](https://github.com/luarocks/luarocks/wiki/Download)
-2. Run the installer and follow the installation wizard
-3. Add LuaRocks to your system PATH if the installer hasn't done so
-
-### Installing Node.js
-
-#### macOS/Linux (Using NVM)
-1. Install NVM:
-   ```bash
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-   ```
-2. Restart your terminal
-3. Install Node.js:
-   ```bash
-   nvm install 22
-   nvm use 22
-   ```
-
-#### Windows
-Download and install Node.js v22.x LTS directly from the [Node.js official website](https://nodejs.org/en/download)
+- [Node.js Installation Guide](misc/install_npm.md)
+- [LuaRocks Installation Guide](misc/install_luarocks.md)
 
 ### Installing Project Dependencies
 
@@ -60,9 +29,9 @@ To build the project, use:
 make build
 ```
 
-### Running Tests
+### Running Unit Tests
 
-To run the test suite, execute:
+To run the unit test suite, execute:
 
 ```bash
 make test

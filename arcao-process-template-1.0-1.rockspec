@@ -11,7 +11,7 @@ description = {
 dependencies = {
    "lua >= 5.3",
    "busted >= 2.1.1",  -- Adding Busted dependency
-   "ldoc"  -- Adding Penlight for path handling
+   "ldoc"
 }
 build = {
    type = "builtin",
