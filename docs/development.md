@@ -1,8 +1,12 @@
 # Development Guide
 
-## Development Guide
+## Platform-Specific Prerequisites
 
-This guide will get you developing your AO process in no time, providing all the necessary steps and information to streamline your development workflow.
+### Windows Users
+Windows users need to install WSL (Windows Subsystem for Linux) first. Please follow the [WSL Installation Guide](misc/install_wsl.md) before proceeding.
+
+### macOS Users
+macOS users need to install Homebrew first. Please follow the [Homebrew Installation Guide](misc/install_homebrew.md) before proceeding.
 
 ## Prerequisites
 
