@@ -3,7 +3,6 @@
 ![GitHub](https://img.shields.io/github/license/ArcAOGaming/arcao-process-template)
 ![Build Status](https://img.shields.io/github/actions/workflow/status/ArcAOGaming/arcao-process-template/deploy.yml)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ArcAOGaming/arcao-process-template)
-![GitHub latest release](https://img.shields.io/github/v/release/ArcAOGaming/arcao-process-template)
 [![Latest Release Process ID](https://img.shields.io/badge/dynamic/json?color=blue&label=Latest%20Process%20ID&query=$.body&url=https://api.github.com/repos/ArcAOGaming/arcao-process-template/releases/latest)](https://github.com/ArcAOGaming/arcao-process-template/releases/latest)
 ## Overview
 
