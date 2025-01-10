@@ -13,4 +13,5 @@
    ```
 
 ## Windows
-Download and install Node.js v22.x LTS directly from the [Node.js official website](https://nodejs.org/en/download)
+1. First, [install WSL 2](install_wsl.md)
+2. Once WSL is installed and you have Ubuntu running, follow the macOS/Linux instructions above
