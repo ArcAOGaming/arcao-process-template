@@ -34,6 +34,7 @@ setup:
 # Intalling AO
 install:
 	sudo luarocks install --tree=lib --only-deps arcao-process-template-1.0-1.rockspec
+	sudo luarocks install --only-deps arcao-process-template-1.0-1.rockspec
 	sudo npm install
 	sudo npm i -g https://get_ao.g8way.io
 
@@ -45,7 +46,7 @@ build:
 
 # Define the target for running tests
 test:
-	busted --verbose
+	sudo busted --verbose
 
 deploy:
 	bash deploy.sh
