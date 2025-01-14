@@ -11,7 +11,8 @@ description = {
 dependencies = {
    "lua >= 5.1",
    "busted >= 2.1.1",  -- Adding Busted dependency
-   "ldoc"
+   "ldoc",
+   "bint" -- For Template Purpose to Demonstrate Library importing
 }
 build = {
    type = "builtin",

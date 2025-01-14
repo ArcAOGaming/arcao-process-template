@@ -27,11 +27,12 @@ setup:
 	fi
 
 # Define the target for installing dependencies
-# Installing Lua dependencies to lib.
+# Installing Lua dependencies to lib & global.
 # Installing Node dependencies to node_modules.
 # Intalling AO
 install:
 	luarocks install --tree=lib --only-deps arcao-process-template-1.0-1.rockspec
+	luarocks install --only-deps arcao-process-template-1.0-1.rockspec
 	npm install
 	npm i -g https://get_ao.g8way.io
 
