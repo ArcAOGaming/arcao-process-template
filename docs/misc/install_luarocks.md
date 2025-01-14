@@ -1,24 +1,18 @@
 # Installing LuaRocks
 
-## macOS
-First, install Homebrew if you haven't already:
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Then install LuaRocks:
-```bash
-# Using Homebrew
-brew install luarocks
-```
-
 ## Linux
 ```bash
 sudo apt-get update
 sudo apt-get install luarocks
 ```
 
+## macOS
+1. First, [install Homebrew](install_homebrew.md)
+2. Then install LuaRocks:
+```bash
+brew install luarocks
+```
+
 ## Windows
-1. Download the latest Windows installer from the [LuaRocks releases page](https://github.com/luarocks/luarocks/wiki/Download)
-2. Run the installer and follow the installation wizard
-3. Add LuaRocks to your system PATH if the installer hasn't done so
+1. First, [install WSL 2](install_wsl.md)
+2. Once WSL is installed and you have Ubuntu running, follow the Linux instructions above
