@@ -9,7 +9,7 @@ const bundledLua = bundle('./src/main.lua', {
   luaVersion: '5.3',
   force: true,
   paths: [
-    'lib/share/lua/5.4/?.lua',
+    'lib/share/lua/5.3/?.lua',
     '?.lua',
     './.?lua',
     './**?.lua',
