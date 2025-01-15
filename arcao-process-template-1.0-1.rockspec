@@ -9,7 +9,7 @@ description = {
    license = "MIT"
 }
 dependencies = {
-   "lua >= 5.1",
+   "lua >= 5.3",
    "busted >= 2.1.1",  -- Adding Busted dependency
    "ldoc",
    "bint" -- For Template Purpose to Demonstrate Library importing
