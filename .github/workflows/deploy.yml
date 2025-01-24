@@ -24,9 +24,6 @@ jobs:
     - name: Install additional dependencies
       run: make install
 
-    - name: Build project
-      run: make build
-
     - name: Deploy with AOS
       run: |
         bash deploy.sh

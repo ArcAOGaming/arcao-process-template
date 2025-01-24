@@ -1,9 +1,5 @@
 # Makefile for project setup and execution
 
-# Define the output file for the bundled Lua
-OUTPUT_FILE=process.lua
-
-
 setup:
 	@echo "Setting up the environment..."
 	@if [ "$(shell uname)" = "Darwin" ]; then \
@@ -33,27 +29,18 @@ setup:
 		echo "Please follow the instructions in docs/misc/install_npm.md and docs/misc/install_luarocks.md for your OS."; \
 	fi
 
-# Define the target for installing dependencies
-# Installing Lua dependencies to lib & global.
-# Installing Node dependencies to node_modules.
-# Intalling AO
+# Install dependencies
 install:
 	sudo luarocks install --tree=lib --only-deps arcao-process-template-1.0-1.rockspec
 	sudo luarocks install --only-deps arcao-process-template-1.0-1.rockspec
-	sudo npm install
-	sudo npm i -g https://get_ao.g8way.io
+	npm install
 
-# Define the target for setting up the environment
-
-# Define the target for running the node script
-build:
-	node bundle.js $(OUTPUT_FILE)
-
-# Define the target for running tests
+# Run tests
 test:
 	sudo busted --verbose
 
+# Deploy to AO network
 deploy:
-	bash deploy.sh
+	node deploy.js
 
-.PHONY: build install test setup deploy
+.PHONY: install test setup deploy

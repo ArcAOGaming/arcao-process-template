@@ -2,3 +2,4 @@ node_modules/
 lib/
 process.lua
 *.log
+wallet.json
