@@ -26,7 +26,7 @@ jobs:
 
     - name: Deploy with AOS
       run: |
-        bash deploy.sh
+        make deploy
         # Placeholder for capturing the process ID
         # You might need to parse the output to capture the process ID
 
