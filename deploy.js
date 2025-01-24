@@ -2,6 +2,11 @@ import { createDataItemSigner, spawn, message } from "@permaweb/aoconnect";
 import { bundle } from 'luabundle';
 import fs from 'fs';
 
+// Constants
+const MODULE = "ghSkge2sIUD_F00ym5sEimC63BDBuBrq4b5OcwxOjiw";
+const SCHEDULER = "_GQ33BkPtZrqxA84vM8Zk-N2aO0toNNu_C-l-rawrBA";
+const AUTHORITY = "fcoN_xJeisVsPXA-trzVAuIiqO3ydLQxM-L4XbrQKzY";
+
 // Load wallet
 const pathToWallet = 'wallet.json';
 
@@ -40,11 +45,11 @@ async function deploy() {
     try {
         // Spawn process
         const processId = await spawn({
-            module: "ghSkge2sIUD_F00ym5sEimC63BDBuBrq4b5OcwxOjiw",
-            scheduler: "_GQ33BkPtZrqxA84vM8Zk-N2aO0toNNu_C-l-rawrBA",
+            module: MODULE,
+            scheduler: SCHEDULER,
             signer: createDataItemSigner(wallet),
             tags: [
-                { name: "Authority", value: "fcoN_xJeisVsPXA-trzVAuIiqO3ydLQxM-L4XbrQKzY" },
+                { name: "Authority", value: AUTHORITY },
             ]
         });
 
