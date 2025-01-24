@@ -1,9 +1,9 @@
 # arcao-process-template
 
-![GitHub](https://img.shields.io/github/license/%{owner}/%{repo})
-![Build Status](https://img.shields.io/github/actions/workflow/status/%{owner}/%{repo}/deploy.yml)
-![GitHub last commit](https://img.shields.io/github/last-commit/%{owner}/%{repo})
-[![Latest Release Process ID](https://img.shields.io/github/v/release/%{owner}/%{repo}?label=Latest%20Process%20ID)](../../releases/latest)
+[![License](../../LICENSE)](../../LICENSE)
+[![Build Status](../../actions/workflows/deploy.yml/badge.svg)](../../actions/workflows/deploy.yml)
+[![Last Commit](../../commits)](../../commits)
+[![Latest Release](../../releases/latest/download/badge.svg)](../../releases/latest)
 ## Overview
 
 The `arcao-process-template` is a comprehensive template designed for developing, testing, and deploying AO processes.
